@@ -1,0 +1,5271 @@
+{
+  "version": 3,
+  "sources": [
+    "/Users/asthayadav/Documents/spinning-wheel/projects/spinning-wheel-contracts/lib_pcg/consts.algo.ts",
+    "/Users/asthayadav/Documents/spinning-wheel/projects/spinning-wheel-contracts/lib_pcg/pcg32.algo.ts",
+    "/Users/asthayadav/Documents/spinning-wheel/projects/spinning-wheel-contracts/lib_pcg/pcg64.algo.ts",
+    "/Users/asthayadav/Documents/spinning-wheel/projects/spinning-wheel-contracts/smart_contracts/pcg_generator/contract.algo.ts"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AGWA;;AAAA;;;AAAA;;;;;;AAAA;;;AAAA;;;;AAAA;;AACE;;AAAA;AAAA;AAAA;;AAAA;AADF;;;AAAA;;;AAAA;;;AAAA;;;AACE;;;AAAA;;;;;;AAAA;AAAA;AAAA;AAAA;;AADF;;AAAA;AAAA;;AAAA;;;;;;AAAA;;;AAAA;;AAAA;AAAA;AAAA;;AAeG;;AAAA;AAAA;;;AAAA;;AFGH;;;AAC2C;;AAAc;;AAAd;AAAA;;AAAA;AAA2B;;AAAlC;AAXlB;;AAAT;AAYD;;AAAoB;;AAAd;AACL;AAAA;AAlBoB;AAAA;AAAQ;AAAhB;AAAA;;AAkBoE;;AAApB;AAAnB;;AAAA;AAAA;AAbhC;;AAAT;AAaA;AAAP;ACzBF;;;ADgBqB;;ADrBe;ACqBf;AAAA;;ADnBmB;ACoBnB;AAAA;AAAA;;AAAA;ACfqB;;;AAAkB;;;;;;;;;;ADcvC;;ADrBe;ACqBf;AAAA;;AACA;AAAA;;ACboB;;AAAA;;;AAAyB;;AAAhC;AAAsC;;AAAA;;;AAAtC;AAAhC;;AAAA;;AAAA;;AAAA;AFLuC;;;;;AGMvC;;;;;;;ADMc;;AAAuB;AAAvB;ADgFY;ADhGQ;ACqBf;AAAA;;AACA;ADpBmB;ACoBnB;AAAA;;AA2EA;;AAAA;AAAA;;ADjGe;ACqBf;AAAA;;ADnBmB;ACoBnB;AAAA;;AAAA;ACLL;;AAAuB;;AAAvB;ADKK;ADlBoB;;ACkBpB;AAAA;;AA2EA;AAAA;;ADjGe;ACqBf;AAAA;;ADjBoB;;ACkBpB;AAAA;;AEH2C;;AAAA;AAAA;AAAoB;;AAAA;AAAA;AAAe;;AAAA;AAAA;ADQlF;;;;AAAA;AAIX;;;AAAA;;AAAA;;;AACkB;AAAX;;;;;;;;;;AAAe;;AAAA;;AAAA;AAAxB;;;AACwB;;AAAA;;AAAA;;;AAGtB;;AAAA;;;AAAY;AAAA;AAAZ;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;;AAJkC;;AAAQ;AAAJ;AAAJ;;;;;;;;;ACXpC;;AAAA;;AAAA;ADkBA;;AAAA;;;AACS;;AAAA;AAAa;AAAb;AAAP;AACoB;AAAa;AAAb;AAAb;;AAAA;AAAA;;AAAA;AAAP;AAEgB;AAAhB;;AD/BuB;;AAAA;AAAA;AAAQ;AAAhB;AAAA;;ACsCX;AAAoB;AAApB;;AAEc;AAAX;;;;;;;;;;AAAe;;AAAA;;AAAA;AAAxB;;;AAEkC;;AAAA;;AAAA;;;AAAA;AAAA;;AAAA;;AAAA;;AAAA;;AAE1B;;AAAA;AAAJ;;;AACE;;AAAA;;;AAAyB;;AAAA;;AAAA;AAAD;;AAAA;AAAZ;AAAZ;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;;AAL8B;;AAAQ;AAAJ;AAAJ;;;;;;;;;;;;;;;;;;;;AAP3B;;AAAA;AAAa;;;;;;;;;;;AAAb;AAAP;AAEiD;AAAX;;;;;;;;;;;AAAR;AAAA;AAAd;AAAhB;;;;;ACrBS;;AAAkB;;AAAtB;AAAP;",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "@algorandfoundation/algorand-typescript/arc4/index.d.ts::Contract.approvalProgram",
+      "params": {},
+      "block": "main",
+      "stack_in": [],
+      "op": "intcblock 1 0 6364136223846793005 1442695040888963407 1442695040888963409 4294967295"
+    },
+    "37": {
+      "op": "txn NumAppArgs",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "39": {
+      "op": "bz main_bare_routing@6",
+      "stack_out": []
+    },
+    "42": {
+      "op": "pushbytes 0xba5682ce // method \"bounded_rand_uint64(byte[16],uint64,uint64,uint16)uint64[]\"",
+      "defined_out": [
+        "Method(bounded_rand_uint64(byte[16],uint64,uint64,uint16)uint64[])"
+      ],
+      "stack_out": [
+        "Method(bounded_rand_uint64(byte[16],uint64,uint64,uint16)uint64[])"
+      ]
+    },
+    "48": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(bounded_rand_uint64(byte[16],uint64,uint64,uint16)uint64[])",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "Method(bounded_rand_uint64(byte[16],uint64,uint64,uint16)uint64[])",
+        "tmp%2#0"
+      ]
+    },
+    "51": {
+      "op": "match main_bounded_rand_uint64_route@3",
+      "stack_out": []
+    },
+    "55": {
+      "block": "main_after_if_else@11",
+      "stack_in": [],
+      "op": "intc_1 // 0",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "56": {
+      "op": "return",
+      "stack_out": []
+    },
+    "57": {
+      "block": "main_bounded_rand_uint64_route@3",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "59": {
+      "op": "!",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "60": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "61": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "63": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "64": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "reinterpret_bytes[16]%0#0"
+      ],
+      "stack_out": [
+        "reinterpret_bytes[16]%0#0"
+      ]
+    },
+    "67": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "reinterpret_bytes[16]%0#0",
+        "reinterpret_bytes[8]%0#0"
+      ],
+      "stack_out": [
+        "reinterpret_bytes[16]%0#0",
+        "reinterpret_bytes[8]%0#0"
+      ]
+    },
+    "70": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "reinterpret_bytes[16]%0#0",
+        "reinterpret_bytes[8]%0#0",
+        "reinterpret_bytes[8]%1#0"
+      ],
+      "stack_out": [
+        "reinterpret_bytes[16]%0#0",
+        "reinterpret_bytes[8]%0#0",
+        "reinterpret_bytes[8]%1#0"
+      ]
+    },
+    "73": {
+      "op": "txna ApplicationArgs 4",
+      "defined_out": [
+        "reinterpret_bytes[16]%0#0",
+        "reinterpret_bytes[2]%0#0",
+        "reinterpret_bytes[8]%0#0",
+        "reinterpret_bytes[8]%1#0"
+      ],
+      "stack_out": [
+        "reinterpret_bytes[16]%0#0",
+        "reinterpret_bytes[8]%0#0",
+        "reinterpret_bytes[8]%1#0",
+        "reinterpret_bytes[2]%0#0"
+      ]
+    },
+    "76": {
+      "callsub": "smart_contracts/pcg_generator/contract.algo.ts::LibPcg64ExposerAlgoTs.bounded_rand_uint64",
+      "op": "callsub bounded_rand_uint64",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "79": {
+      "op": "pushbytes 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0",
+        "0x151f7c75"
+      ]
+    },
+    "85": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "tmp%7#0"
+      ]
+    },
+    "86": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "87": {
+      "op": "log",
+      "stack_out": []
+    },
+    "88": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "89": {
+      "op": "return",
+      "stack_out": []
+    },
+    "90": {
+      "block": "main_bare_routing@6",
+      "stack_in": [],
+      "op": "pushint 4 // 4",
+      "defined_out": [
+        "4"
+      ],
+      "stack_out": [
+        "4"
+      ]
+    },
+    "92": {
+      "op": "intc_1 // 0",
+      "defined_out": [
+        "0",
+        "4"
+      ],
+      "stack_out": [
+        "4",
+        "0"
+      ]
+    },
+    "93": {
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "0",
+        "4",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "4",
+        "0",
+        "tmp%9#0"
+      ]
+    },
+    "95": {
+      "op": "match main_update@7 main___algots__.defaultCreate@8",
+      "stack_out": []
+    },
+    "101": {
+      "op": "b main_after_if_else@11"
+    },
+    "104": {
+      "block": "main___algots__.defaultCreate@8",
+      "stack_in": [],
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "tmp%12#0"
+      ]
+    },
+    "106": {
+      "op": "!",
+      "defined_out": [
+        "tmp%13#0"
+      ],
+      "stack_out": [
+        "tmp%13#0"
+      ]
+    },
+    "107": {
+      "error": "can only call when creating",
+      "op": "assert // can only call when creating",
+      "stack_out": []
+    },
+    "108": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "109": {
+      "op": "return",
+      "stack_out": []
+    },
+    "110": {
+      "block": "main_update@7",
+      "stack_in": [],
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "tmp%10#0"
+      ]
+    },
+    "112": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "113": {
+      "callsub": "smart_contracts/pcg_generator/contract.algo.ts::LibPcg64ExposerAlgoTs.update",
+      "op": "callsub update"
+    },
+    "116": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "117": {
+      "op": "return",
+      "stack_out": []
+    },
+    "118": {
+      "subroutine": "lib_pcg/pcg32.algo.ts::__pcg32Output",
+      "params": {
+        "state#0": "uint64"
+      },
+      "block": "__pcg32Output",
+      "stack_in": [],
+      "op": "proto 1 1"
+    },
+    "121": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "state#0 (copy)"
+      ],
+      "stack_out": [
+        "state#0 (copy)"
+      ]
+    },
+    "123": {
+      "op": "pushint 18 // 18",
+      "defined_out": [
+        "18",
+        "state#0 (copy)"
+      ],
+      "stack_out": [
+        "state#0 (copy)",
+        "18"
+      ]
+    },
+    "125": {
+      "op": "shr",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "126": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "tmp%0#0",
+        "state#0 (copy)"
+      ]
+    },
+    "128": {
+      "op": "^",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "129": {
+      "op": "pushint 27 // 27",
+      "defined_out": [
+        "27",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0",
+        "27"
+      ]
+    },
+    "131": {
+      "op": "shr",
+      "defined_out": [
+        "value#0"
+      ],
+      "stack_out": [
+        "value#0"
+      ]
+    },
+    "132": {
+      "op": "intc 5 // 4294967295",
+      "defined_out": [
+        "4294967295",
+        "value#0"
+      ],
+      "stack_out": [
+        "value#0",
+        "4294967295"
+      ]
+    },
+    "134": {
+      "op": "&",
+      "defined_out": [
+        "xorshifted#0"
+      ],
+      "stack_out": [
+        "xorshifted#0"
+      ]
+    },
+    "135": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "xorshifted#0",
+        "state#0 (copy)"
+      ]
+    },
+    "137": {
+      "op": "pushint 59 // 59",
+      "defined_out": [
+        "59",
+        "state#0 (copy)",
+        "xorshifted#0"
+      ],
+      "stack_out": [
+        "xorshifted#0",
+        "state#0 (copy)",
+        "59"
+      ]
+    },
+    "139": {
+      "op": "shr",
+      "defined_out": [
+        "rot#0",
+        "xorshifted#0"
+      ],
+      "stack_out": [
+        "xorshifted#0",
+        "rot#0"
+      ]
+    },
+    "140": {
+      "op": "dup2",
+      "defined_out": [
+        "rot#0",
+        "rot#0 (copy)",
+        "xorshifted#0",
+        "xorshifted#0 (copy)"
+      ],
+      "stack_out": [
+        "xorshifted#0",
+        "rot#0",
+        "xorshifted#0 (copy)",
+        "rot#0 (copy)"
+      ]
+    },
+    "141": {
+      "op": "shr",
+      "defined_out": [
+        "rot#0",
+        "tmp%3#0",
+        "xorshifted#0"
+      ],
+      "stack_out": [
+        "xorshifted#0",
+        "rot#0",
+        "tmp%3#0"
+      ]
+    },
+    "142": {
+      "op": "swap",
+      "stack_out": [
+        "xorshifted#0",
+        "tmp%3#0",
+        "rot#0"
+      ]
+    },
+    "143": {
+      "op": "~",
+      "stack_out": [
+        "xorshifted#0",
+        "tmp%3#0",
+        "tmp%0#0"
+      ]
+    },
+    "144": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1",
+        "tmp%0#0",
+        "tmp%3#0",
+        "xorshifted#0"
+      ],
+      "stack_out": [
+        "xorshifted#0",
+        "tmp%3#0",
+        "tmp%0#0",
+        "1"
+      ]
+    },
+    "145": {
+      "op": "addw",
+      "defined_out": [
+        "_#0",
+        "addLow#0",
+        "tmp%3#0",
+        "xorshifted#0"
+      ],
+      "stack_out": [
+        "xorshifted#0",
+        "tmp%3#0",
+        "_#0",
+        "addLow#0"
+      ]
+    },
+    "146": {
+      "op": "bury 1",
+      "stack_out": [
+        "xorshifted#0",
+        "tmp%3#0",
+        "addLow#0"
+      ]
+    },
+    "148": {
+      "op": "pushint 31 // 31",
+      "defined_out": [
+        "31",
+        "addLow#0",
+        "tmp%3#0",
+        "xorshifted#0"
+      ],
+      "stack_out": [
+        "xorshifted#0",
+        "tmp%3#0",
+        "addLow#0",
+        "31"
+      ]
+    },
+    "150": {
+      "op": "&",
+      "defined_out": [
+        "tmp%3#0",
+        "tmp%5#0",
+        "xorshifted#0"
+      ],
+      "stack_out": [
+        "xorshifted#0",
+        "tmp%3#0",
+        "tmp%5#0"
+      ]
+    },
+    "151": {
+      "op": "uncover 2",
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%5#0",
+        "xorshifted#0"
+      ]
+    },
+    "153": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%3#0",
+        "xorshifted#0",
+        "tmp%5#0"
+      ]
+    },
+    "154": {
+      "op": "shl",
+      "stack_out": [
+        "tmp%3#0",
+        "value#0"
+      ]
+    },
+    "155": {
+      "op": "intc 5 // 4294967295",
+      "stack_out": [
+        "tmp%3#0",
+        "value#0",
+        "4294967295"
+      ]
+    },
+    "157": {
+      "op": "&",
+      "defined_out": [
+        "tmp%2#2",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%2#2"
+      ]
+    },
+    "158": {
+      "op": "|",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "159": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "160": {
+      "subroutine": "lib_pcg/pcg64.algo.ts::__pcg64UnboundedRandom",
+      "params": {
+        "state.0#0": "uint64",
+        "state.1#0": "uint64"
+      },
+      "block": "__pcg64UnboundedRandom",
+      "stack_in": [],
+      "op": "proto 2 3"
+    },
+    "163": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "state.0#0 (copy)"
+      ],
+      "stack_out": [
+        "state.0#0 (copy)"
+      ]
+    },
+    "165": {
+      "op": "intc_2 // 6364136223846793005",
+      "defined_out": [
+        "6364136223846793005",
+        "state.0#0 (copy)"
+      ],
+      "stack_out": [
+        "state.0#0 (copy)",
+        "6364136223846793005"
+      ]
+    },
+    "166": {
+      "op": "mulw",
+      "defined_out": [
+        "_#0",
+        "mulLow#0"
+      ],
+      "stack_out": [
+        "_#0",
+        "mulLow#0"
+      ]
+    },
+    "167": {
+      "op": "bury 1",
+      "stack_out": [
+        "mulLow#0"
+      ]
+    },
+    "169": {
+      "op": "intc_3 // 1442695040888963407",
+      "defined_out": [
+        "1442695040888963407",
+        "mulLow#0"
+      ],
+      "stack_out": [
+        "mulLow#0",
+        "1442695040888963407"
+      ]
+    },
+    "170": {
+      "op": "addw",
+      "defined_out": [
+        "_\u2081#0",
+        "addLow#1"
+      ],
+      "stack_out": [
+        "_\u2081#0",
+        "addLow#1"
+      ]
+    },
+    "171": {
+      "op": "dup",
+      "stack_out": [
+        "_\u2081#0",
+        "addLow#1",
+        "addLow#1 (copy)"
+      ]
+    },
+    "172": {
+      "op": "uncover 2",
+      "defined_out": [
+        "_\u2081#0",
+        "addLow#1"
+      ],
+      "stack_out": [
+        "addLow#1",
+        "addLow#1",
+        "_\u2081#0"
+      ]
+    },
+    "174": {
+      "op": "pop",
+      "stack_out": [
+        "addLow#1",
+        "addLow#1"
+      ]
+    },
+    "175": {
+      "op": "bnz __pcg64UnboundedRandom_ternary_false@2",
+      "stack_out": [
+        "addLow#1"
+      ]
+    },
+    "178": {
+      "op": "pushint 2885390081777926818 // 2885390081777926818",
+      "defined_out": [
+        "addLow#1",
+        "incr#0"
+      ],
+      "stack_out": [
+        "addLow#1",
+        "incr#0"
+      ]
+    },
+    "188": {
+      "block": "__pcg64UnboundedRandom_ternary_merge@3",
+      "stack_in": [
+        "addLow#1",
+        "incr#0"
+      ],
+      "op": "frame_dig -1",
+      "defined_out": [
+        "state.1#0 (copy)"
+      ],
+      "stack_out": [
+        "addLow#1",
+        "incr#0",
+        "state.1#0 (copy)"
+      ]
+    },
+    "190": {
+      "op": "intc_2 // 6364136223846793005",
+      "defined_out": [
+        "6364136223846793005",
+        "state.1#0 (copy)"
+      ],
+      "stack_out": [
+        "addLow#1",
+        "incr#0",
+        "state.1#0 (copy)",
+        "6364136223846793005"
+      ]
+    },
+    "191": {
+      "op": "mulw",
+      "defined_out": [
+        "_#0",
+        "mulLow#0"
+      ],
+      "stack_out": [
+        "addLow#1",
+        "incr#0",
+        "_#0",
+        "mulLow#0"
+      ]
+    },
+    "192": {
+      "op": "bury 1",
+      "stack_out": [
+        "addLow#1",
+        "incr#0",
+        "mulLow#0"
+      ]
+    },
+    "194": {
+      "op": "addw",
+      "defined_out": [
+        "_\u2081#0",
+        "addLow#0"
+      ],
+      "stack_out": [
+        "addLow#1",
+        "_\u2081#0",
+        "addLow#0"
+      ]
+    },
+    "195": {
+      "op": "bury 1",
+      "stack_out": [
+        "addLow#1",
+        "addLow#0"
+      ]
+    },
+    "197": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "addLow#0",
+        "state.0#0 (copy)"
+      ],
+      "stack_out": [
+        "addLow#1",
+        "addLow#0",
+        "state.0#0 (copy)"
+      ]
+    },
+    "199": {
+      "callsub": "lib_pcg/pcg32.algo.ts::__pcg32Output",
+      "op": "callsub __pcg32Output",
+      "defined_out": [
+        "addLow#0",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "addLow#1",
+        "addLow#0",
+        "tmp%1#0"
+      ]
+    },
+    "202": {
+      "op": "pushint 32 // 32",
+      "defined_out": [
+        "32",
+        "addLow#0",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "addLow#1",
+        "addLow#0",
+        "tmp%1#0",
+        "32"
+      ]
+    },
+    "204": {
+      "op": "shl",
+      "defined_out": [
+        "addLow#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "addLow#1",
+        "addLow#0",
+        "tmp%2#0"
+      ]
+    },
+    "205": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "addLow#1",
+        "addLow#0",
+        "tmp%2#0",
+        "state.1#0 (copy)"
+      ]
+    },
+    "207": {
+      "callsub": "lib_pcg/pcg32.algo.ts::__pcg32Output",
+      "op": "callsub __pcg32Output",
+      "defined_out": [
+        "addLow#0",
+        "tmp%2#0",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "addLow#1",
+        "addLow#0",
+        "tmp%2#0",
+        "tmp%3#0"
+      ]
+    },
+    "210": {
+      "op": "|",
+      "defined_out": [
+        "addLow#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "addLow#1",
+        "addLow#0",
+        "tmp%4#0"
+      ]
+    },
+    "211": {
+      "op": "frame_dig 0",
+      "defined_out": [
+        "addLow#0",
+        "addLow#1",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "addLow#1",
+        "addLow#0",
+        "tmp%4#0",
+        "addLow#1"
+      ]
+    },
+    "213": {
+      "op": "cover 2",
+      "stack_out": [
+        "addLow#1",
+        "addLow#1",
+        "addLow#0",
+        "tmp%4#0"
+      ]
+    },
+    "215": {
+      "op": "uncover 3"
+    },
+    "217": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "218": {
+      "block": "__pcg64UnboundedRandom_ternary_false@2",
+      "stack_in": [
+        "addLow#1"
+      ],
+      "op": "intc 4 // 1442695040888963409",
+      "defined_out": [
+        "incr#0"
+      ],
+      "stack_out": [
+        "addLow#1",
+        "incr#0"
+      ]
+    },
+    "220": {
+      "op": "b __pcg64UnboundedRandom_ternary_merge@3"
+    },
+    "223": {
+      "subroutine": "smart_contracts/pcg_generator/contract.algo.ts::LibPcg64ExposerAlgoTs.bounded_rand_uint64",
+      "params": {
+        "seed#0": "bytes",
+        "lower_bound#0": "bytes",
+        "upper_bound#0": "bytes",
+        "length#0": "bytes"
+      },
+      "block": "bounded_rand_uint64",
+      "stack_in": [],
+      "op": "proto 4 1"
+    },
+    "226": {
+      "op": "pushbytes \"\"",
+      "stack_out": [
+        "absoluteBound#0"
+      ]
+    },
+    "228": {
+      "op": "dupn 7",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0"
+      ]
+    },
+    "230": {
+      "op": "frame_dig -4",
+      "defined_out": [
+        "seed#0 (copy)"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "seed#0 (copy)"
+      ]
+    },
+    "232": {
+      "op": "intc_1 // 0",
+      "defined_out": [
+        "0",
+        "seed#0 (copy)"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "seed#0 (copy)",
+        "0"
+      ]
+    },
+    "233": {
+      "op": "extract_uint64",
+      "defined_out": [
+        "initialState#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "initialState#0"
+      ]
+    },
+    "234": {
+      "op": "intc_1 // 0",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "initialState#0",
+        "0"
+      ]
+    },
+    "235": {
+      "op": "intc_2 // 6364136223846793005",
+      "defined_out": [
+        "0",
+        "6364136223846793005",
+        "initialState#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "initialState#0",
+        "0",
+        "6364136223846793005"
+      ]
+    },
+    "236": {
+      "op": "mulw",
+      "defined_out": [
+        "_#0",
+        "initialState#0",
+        "mulLow#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "initialState#0",
+        "_#0",
+        "mulLow#0"
+      ]
+    },
+    "237": {
+      "op": "bury 1",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "initialState#0",
+        "mulLow#0"
+      ]
+    },
+    "239": {
+      "op": "dup",
+      "defined_out": [
+        "initialState#0",
+        "mulLow#0",
+        "mulLow#0 (copy)"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "initialState#0",
+        "mulLow#0",
+        "mulLow#0 (copy)"
+      ]
+    },
+    "240": {
+      "op": "intc_3 // 1442695040888963407",
+      "defined_out": [
+        "1442695040888963407",
+        "initialState#0",
+        "mulLow#0",
+        "mulLow#0 (copy)"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "initialState#0",
+        "mulLow#0",
+        "mulLow#0 (copy)",
+        "1442695040888963407"
+      ]
+    },
+    "241": {
+      "op": "addw",
+      "defined_out": [
+        "_\u2081#0",
+        "addLow#1",
+        "initialState#0",
+        "mulLow#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "initialState#0",
+        "mulLow#0",
+        "_\u2081#0",
+        "addLow#1"
+      ]
+    },
+    "242": {
+      "op": "bury 1",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "initialState#0",
+        "mulLow#0",
+        "addLow#1"
+      ]
+    },
+    "244": {
+      "op": "uncover 2",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "mulLow#0",
+        "addLow#1",
+        "initialState#0"
+      ]
+    },
+    "246": {
+      "op": "addw",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "mulLow#0",
+        "_#0",
+        "addLow#1"
+      ]
+    },
+    "247": {
+      "op": "bury 1",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "mulLow#0",
+        "addLow#1"
+      ]
+    },
+    "249": {
+      "op": "intc_2 // 6364136223846793005",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "mulLow#0",
+        "addLow#1",
+        "6364136223846793005"
+      ]
+    },
+    "250": {
+      "op": "mulw",
+      "defined_out": [
+        "_#0",
+        "mulLow#0",
+        "mulLow#1"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "mulLow#0",
+        "_#0",
+        "mulLow#1"
+      ]
+    },
+    "251": {
+      "op": "bury 1",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "mulLow#0",
+        "mulLow#1"
+      ]
+    },
+    "253": {
+      "op": "intc_3 // 1442695040888963407",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "mulLow#0",
+        "mulLow#1",
+        "1442695040888963407"
+      ]
+    },
+    "254": {
+      "op": "addw",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "mulLow#0",
+        "_\u2081#0",
+        "addLow#1"
+      ]
+    },
+    "255": {
+      "op": "cover 2",
+      "defined_out": [
+        "_\u2081#0",
+        "addLow#1",
+        "mulLow#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "mulLow#0",
+        "_\u2081#0"
+      ]
+    },
+    "257": {
+      "op": "pop",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "mulLow#0"
+      ]
+    },
+    "258": {
+      "op": "frame_dig -4",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "mulLow#0",
+        "seed#0 (copy)"
+      ]
+    },
+    "260": {
+      "op": "pushint 8 // 8",
+      "defined_out": [
+        "8",
+        "addLow#1",
+        "mulLow#0",
+        "seed#0 (copy)"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "mulLow#0",
+        "seed#0 (copy)",
+        "8"
+      ]
+    },
+    "262": {
+      "op": "extract_uint64",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "mulLow#0",
+        "initialState#0"
+      ]
+    },
+    "263": {
+      "op": "swap",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "initialState#0",
+        "mulLow#0"
+      ]
+    },
+    "264": {
+      "op": "intc 4 // 1442695040888963409",
+      "defined_out": [
+        "1442695040888963409",
+        "addLow#1",
+        "initialState#0",
+        "mulLow#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "initialState#0",
+        "mulLow#0",
+        "1442695040888963409"
+      ]
+    },
+    "266": {
+      "op": "addw",
+      "defined_out": [
+        "_\u2081#0",
+        "addLow#1",
+        "addLow#4",
+        "initialState#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "initialState#0",
+        "_\u2081#0",
+        "addLow#4"
+      ]
+    },
+    "267": {
+      "op": "bury 1",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "initialState#0",
+        "addLow#4"
+      ]
+    },
+    "269": {
+      "op": "addw",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "_#0",
+        "addLow#4"
+      ]
+    },
+    "270": {
+      "op": "bury 1",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4"
+      ]
+    },
+    "272": {
+      "op": "intc_2 // 6364136223846793005",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "6364136223846793005"
+      ]
+    },
+    "273": {
+      "op": "mulw",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "_#0",
+        "mulLow#0"
+      ]
+    },
+    "274": {
+      "op": "bury 1",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "mulLow#0"
+      ]
+    },
+    "276": {
+      "op": "intc 4 // 1442695040888963409",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "mulLow#0",
+        "1442695040888963409"
+      ]
+    },
+    "278": {
+      "op": "addw",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "_\u2081#0",
+        "addLow#4"
+      ]
+    },
+    "279": {
+      "op": "bury 1",
+      "defined_out": [
+        "addLow#1",
+        "addLow#4"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4"
+      ]
+    },
+    "281": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "addLow#1",
+        "addLow#4",
+        "lower_bound#0 (copy)"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lower_bound#0 (copy)"
+      ]
+    },
+    "283": {
+      "op": "btoi",
+      "defined_out": [
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0"
+      ]
+    },
+    "284": {
+      "op": "dup",
+      "defined_out": [
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "lowerBound#0"
+      ]
+    },
+    "285": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upper_bound#0 (copy)"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "lowerBound#0",
+        "upper_bound#0 (copy)"
+      ]
+    },
+    "287": {
+      "op": "btoi",
+      "defined_out": [
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "lowerBound#0",
+        "upperBound#0"
+      ]
+    },
+    "288": {
+      "op": "swap",
+      "defined_out": [
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "lowerBound#0"
+      ]
+    },
+    "289": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "addLow#1",
+        "addLow#4",
+        "length#0 (copy)",
+        "lowerBound#0",
+        "upperBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "lowerBound#0",
+        "length#0 (copy)"
+      ]
+    },
+    "291": {
+      "op": "btoi",
+      "defined_out": [
+        "addLow#1",
+        "addLow#4",
+        "length#1",
+        "lowerBound#0",
+        "upperBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "lowerBound#0",
+        "length#1"
+      ]
+    },
+    "292": {
+      "op": "swap",
+      "defined_out": [
+        "addLow#1",
+        "addLow#4",
+        "length#1",
+        "lowerBound#0",
+        "upperBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "lowerBound#0"
+      ]
+    },
+    "293": {
+      "op": "pushbytes 0x0000",
+      "defined_out": [
+        "addLow#1",
+        "addLow#4",
+        "length#1",
+        "lowerBound#0",
+        "result#0",
+        "upperBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "lowerBound#0",
+        "result#0"
+      ]
+    },
+    "297": {
+      "op": "swap",
+      "defined_out": [
+        "addLow#1",
+        "addLow#4",
+        "length#1",
+        "lowerBound#0",
+        "result#0",
+        "upperBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "lowerBound#0"
+      ]
+    },
+    "298": {
+      "op": "bnz bounded_rand_uint64_else_body@9",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ]
+    },
+    "301": {
+      "op": "frame_dig 11",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "upperBound#0"
+      ]
+    },
+    "303": {
+      "op": "bnz bounded_rand_uint64_else_body@9",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ]
+    },
+    "306": {
+      "op": "intc_1 // 0",
+      "defined_out": [
+        "addLow#1",
+        "addLow#4",
+        "i#0",
+        "length#1",
+        "lowerBound#0",
+        "result#0",
+        "upperBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "i#0"
+      ]
+    },
+    "307": {
+      "op": "frame_bury 2",
+      "defined_out": [
+        "addLow#1",
+        "addLow#4",
+        "i#0",
+        "length#1",
+        "lowerBound#0",
+        "result#0",
+        "upperBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ]
+    },
+    "309": {
+      "op": "frame_dig 9",
+      "defined_out": [
+        "addLow#1",
+        "addLow#4",
+        "i#0",
+        "length#1",
+        "lowerBound#0",
+        "result#0",
+        "state.1#2",
+        "upperBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "state.1#2"
+      ]
+    },
+    "311": {
+      "op": "frame_bury 6",
+      "defined_out": [
+        "addLow#1",
+        "addLow#4",
+        "i#0",
+        "length#1",
+        "lowerBound#0",
+        "result#0",
+        "state.1#2",
+        "upperBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ]
+    },
+    "313": {
+      "op": "frame_dig 8",
+      "defined_out": [
+        "addLow#1",
+        "addLow#4",
+        "i#0",
+        "length#1",
+        "lowerBound#0",
+        "result#0",
+        "state.0#2",
+        "state.1#2",
+        "upperBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "state.0#2"
+      ]
+    },
+    "315": {
+      "op": "frame_bury 5",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ]
+    },
+    "317": {
+      "block": "bounded_rand_uint64_while_top@6",
+      "stack_in": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ],
+      "op": "frame_dig 2",
+      "defined_out": [
+        "i#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "i#0"
+      ]
+    },
+    "319": {
+      "op": "frame_dig 12",
+      "defined_out": [
+        "i#0",
+        "length#1"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "i#0",
+        "length#1"
+      ]
+    },
+    "321": {
+      "op": "<",
+      "defined_out": [
+        "i#0",
+        "length#1",
+        "tmp%2#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "tmp%2#2"
+      ]
+    },
+    "322": {
+      "op": "bz bounded_rand_uint64_after_if_else@20",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ]
+    },
+    "325": {
+      "op": "frame_dig 5",
+      "defined_out": [
+        "i#0",
+        "length#1",
+        "state.0#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "state.0#2"
+      ]
+    },
+    "327": {
+      "op": "frame_dig 6",
+      "defined_out": [
+        "i#0",
+        "length#1",
+        "state.0#2",
+        "state.1#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "state.0#2",
+        "state.1#2"
+      ]
+    },
+    "329": {
+      "callsub": "lib_pcg/pcg64.algo.ts::__pcg64UnboundedRandom",
+      "op": "callsub __pcg64UnboundedRandom",
+      "defined_out": [
+        "i#0",
+        "length#1",
+        "n#0",
+        "newState.0#1",
+        "newState.1#1",
+        "state.0#2",
+        "state.1#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState.0#1",
+        "newState.1#1",
+        "n#0"
+      ]
+    },
+    "332": {
+      "op": "frame_dig 13",
+      "defined_out": [
+        "i#0",
+        "length#1",
+        "n#0",
+        "newState.0#1",
+        "newState.1#1",
+        "result#0",
+        "state.0#2",
+        "state.1#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState.0#1",
+        "newState.1#1",
+        "n#0",
+        "result#0"
+      ]
+    },
+    "334": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "expr_value_trimmed%0#0",
+        "i#0",
+        "length#1",
+        "n#0",
+        "newState.0#1",
+        "newState.1#1",
+        "result#0",
+        "state.0#2",
+        "state.1#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState.0#1",
+        "newState.1#1",
+        "n#0",
+        "expr_value_trimmed%0#0"
+      ]
+    },
+    "337": {
+      "op": "swap",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState.0#1",
+        "newState.1#1",
+        "expr_value_trimmed%0#0",
+        "n#0"
+      ]
+    },
+    "338": {
+      "op": "itob",
+      "defined_out": [
+        "expr_value_trimmed%0#0",
+        "i#0",
+        "length#1",
+        "newState.0#1",
+        "newState.1#1",
+        "result#0",
+        "state.0#2",
+        "state.1#2",
+        "val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState.0#1",
+        "newState.1#1",
+        "expr_value_trimmed%0#0",
+        "val_as_bytes%0#0"
+      ]
+    },
+    "339": {
+      "op": "concat",
+      "defined_out": [
+        "concatenated%0#0",
+        "i#0",
+        "length#1",
+        "newState.0#1",
+        "newState.1#1",
+        "result#0",
+        "state.0#2",
+        "state.1#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState.0#1",
+        "newState.1#1",
+        "concatenated%0#0"
+      ]
+    },
+    "340": {
+      "op": "dup",
+      "defined_out": [
+        "concatenated%0#0",
+        "concatenated%0#0 (copy)",
+        "i#0",
+        "length#1",
+        "newState.0#1",
+        "newState.1#1",
+        "result#0",
+        "state.0#2",
+        "state.1#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState.0#1",
+        "newState.1#1",
+        "concatenated%0#0",
+        "concatenated%0#0 (copy)"
+      ]
+    },
+    "341": {
+      "op": "len",
+      "defined_out": [
+        "byte_len%0#0",
+        "concatenated%0#0",
+        "i#0",
+        "length#1",
+        "newState.0#1",
+        "newState.1#1",
+        "result#0",
+        "state.0#2",
+        "state.1#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState.0#1",
+        "newState.1#1",
+        "concatenated%0#0",
+        "byte_len%0#0"
+      ]
+    },
+    "342": {
+      "op": "pushint 8 // 8",
+      "defined_out": [
+        "8",
+        "byte_len%0#0",
+        "concatenated%0#0",
+        "i#0",
+        "length#1",
+        "newState.0#1",
+        "newState.1#1",
+        "result#0",
+        "state.0#2",
+        "state.1#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState.0#1",
+        "newState.1#1",
+        "concatenated%0#0",
+        "byte_len%0#0",
+        "8"
+      ]
+    },
+    "344": {
+      "op": "/",
+      "defined_out": [
+        "concatenated%0#0",
+        "i#0",
+        "len_%0#0",
+        "length#1",
+        "newState.0#1",
+        "newState.1#1",
+        "result#0",
+        "state.0#2",
+        "state.1#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState.0#1",
+        "newState.1#1",
+        "concatenated%0#0",
+        "len_%0#0"
+      ]
+    },
+    "345": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%0#0",
+        "concatenated%0#0",
+        "i#0",
+        "length#1",
+        "newState.0#1",
+        "newState.1#1",
+        "result#0",
+        "state.0#2",
+        "state.1#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState.0#1",
+        "newState.1#1",
+        "concatenated%0#0",
+        "as_bytes%0#0"
+      ]
+    },
+    "346": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "concatenated%0#0",
+        "i#0",
+        "len_16_bit%0#0",
+        "length#1",
+        "newState.0#1",
+        "newState.1#1",
+        "result#0",
+        "state.0#2",
+        "state.1#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState.0#1",
+        "newState.1#1",
+        "concatenated%0#0",
+        "len_16_bit%0#0"
+      ]
+    },
+    "349": {
+      "op": "swap",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState.0#1",
+        "newState.1#1",
+        "len_16_bit%0#0",
+        "concatenated%0#0"
+      ]
+    },
+    "350": {
+      "op": "concat",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState.0#1",
+        "newState.1#1",
+        "result#0"
+      ]
+    },
+    "351": {
+      "op": "frame_bury 13",
+      "defined_out": [
+        "i#0",
+        "length#1",
+        "newState.0#1",
+        "newState.1#1",
+        "result#0",
+        "state.0#2",
+        "state.1#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState.0#1",
+        "newState.1#1"
+      ]
+    },
+    "353": {
+      "op": "frame_dig 2",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState.0#1",
+        "newState.1#1",
+        "i#0"
+      ]
+    },
+    "355": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1",
+        "i#0",
+        "length#1",
+        "newState.0#1",
+        "newState.1#1",
+        "result#0",
+        "state.0#2",
+        "state.1#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState.0#1",
+        "newState.1#1",
+        "i#0",
+        "1"
+      ]
+    },
+    "356": {
+      "op": "+",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState.0#1",
+        "newState.1#1",
+        "i#0"
+      ]
+    },
+    "357": {
+      "op": "frame_bury 2",
+      "defined_out": [
+        "i#0",
+        "length#1",
+        "newState.0#1",
+        "result#0",
+        "state.0#2",
+        "state.1#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState.0#1",
+        "state.1#2"
+      ]
+    },
+    "359": {
+      "op": "frame_bury 6",
+      "defined_out": [
+        "i#0",
+        "length#1",
+        "result#0",
+        "state.0#2",
+        "state.1#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "state.0#2"
+      ]
+    },
+    "361": {
+      "op": "frame_bury 5",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ]
+    },
+    "363": {
+      "op": "b bounded_rand_uint64_while_top@6"
+    },
+    "366": {
+      "block": "bounded_rand_uint64_after_if_else@20",
+      "stack_in": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ],
+      "op": "frame_dig 13",
+      "defined_out": [
+        "result#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "result#0"
+      ]
+    },
+    "368": {
+      "op": "frame_bury 0"
+    },
+    "370": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "371": {
+      "block": "bounded_rand_uint64_else_body@9",
+      "stack_in": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ],
+      "op": "frame_dig 11",
+      "defined_out": [
+        "upperBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "upperBound#0"
+      ]
+    },
+    "373": {
+      "op": "bz bounded_rand_uint64_else_body@11",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ]
+    },
+    "376": {
+      "op": "frame_dig 11",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "upperBound#0"
+      ]
+    },
+    "378": {
+      "op": "dup",
+      "defined_out": [
+        "upperBound#0",
+        "upperBound#0 (copy)"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "upperBound#0",
+        "upperBound#0 (copy)"
+      ]
+    },
+    "379": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1",
+        "upperBound#0",
+        "upperBound#0 (copy)"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "upperBound#0",
+        "upperBound#0 (copy)",
+        "1"
+      ]
+    },
+    "380": {
+      "op": ">",
+      "defined_out": [
+        "tmp%4#1",
+        "upperBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "upperBound#0",
+        "tmp%4#1"
+      ]
+    },
+    "381": {
+      "op": "assert",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "upperBound#0"
+      ]
+    },
+    "382": {
+      "op": "dup",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "upperBound#0",
+        "upperBound#0 (copy)"
+      ]
+    },
+    "383": {
+      "op": "intc_0 // 1",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "upperBound#0",
+        "upperBound#0 (copy)",
+        "1"
+      ]
+    },
+    "384": {
+      "op": "-",
+      "defined_out": [
+        "tmp%5#1",
+        "upperBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "upperBound#0",
+        "tmp%5#1"
+      ]
+    },
+    "385": {
+      "op": "frame_dig 10",
+      "defined_out": [
+        "lowerBound#0",
+        "tmp%5#1",
+        "upperBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "upperBound#0",
+        "tmp%5#1",
+        "lowerBound#0"
+      ]
+    },
+    "387": {
+      "op": "dup"
+    },
+    "388": {
+      "op": "uncover 2",
+      "defined_out": [
+        "lowerBound#0",
+        "lowerBound#0 (copy)",
+        "tmp%5#1",
+        "upperBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "upperBound#0",
+        "lowerBound#0",
+        "lowerBound#0 (copy)",
+        "tmp%5#1"
+      ]
+    },
+    "390": {
+      "op": "<",
+      "defined_out": [
+        "lowerBound#0",
+        "tmp%6#0",
+        "upperBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "upperBound#0",
+        "lowerBound#0",
+        "tmp%6#0"
+      ]
+    },
+    "391": {
+      "op": "assert",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "upperBound#0",
+        "lowerBound#0"
+      ]
+    },
+    "392": {
+      "op": "-",
+      "defined_out": [
+        "absoluteBound#0",
+        "lowerBound#0",
+        "upperBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "absoluteBound#0"
+      ]
+    },
+    "393": {
+      "op": "frame_bury 0",
+      "defined_out": [
+        "absoluteBound#0",
+        "lowerBound#0",
+        "upperBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ]
+    },
+    "395": {
+      "block": "bounded_rand_uint64_after_if_else@12",
+      "stack_in": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ],
+      "op": "frame_dig 0",
+      "defined_out": [
+        "absoluteBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "absoluteBound#0"
+      ]
+    },
+    "397": {
+      "op": "dup",
+      "defined_out": [
+        "absoluteBound#0",
+        "absoluteBound#0 (copy)"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "absoluteBound#0",
+        "absoluteBound#0 (copy)"
+      ]
+    },
+    "398": {
+      "op": "~",
+      "defined_out": [
+        "absoluteBound#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "absoluteBound#0",
+        "tmp%0#0"
+      ]
+    },
+    "399": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1",
+        "absoluteBound#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "absoluteBound#0",
+        "tmp%0#0",
+        "1"
+      ]
+    },
+    "400": {
+      "op": "addw",
+      "defined_out": [
+        "_#0",
+        "absoluteBound#0",
+        "addLow#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "absoluteBound#0",
+        "_#0",
+        "addLow#0"
+      ]
+    },
+    "401": {
+      "op": "bury 1",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "absoluteBound#0",
+        "addLow#0"
+      ]
+    },
+    "403": {
+      "op": "swap",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "addLow#0",
+        "absoluteBound#0"
+      ]
+    },
+    "404": {
+      "op": "%",
+      "defined_out": [
+        "absoluteBound#0",
+        "threshold#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "threshold#0"
+      ]
+    },
+    "405": {
+      "op": "frame_bury 7",
+      "defined_out": [
+        "absoluteBound#0",
+        "threshold#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ]
+    },
+    "407": {
+      "op": "intc_1 // 0",
+      "defined_out": [
+        "absoluteBound#0",
+        "i\u2081#0",
+        "threshold#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "i\u2081#0"
+      ]
+    },
+    "408": {
+      "op": "frame_bury 3",
+      "defined_out": [
+        "absoluteBound#0",
+        "i\u2081#0",
+        "threshold#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ]
+    },
+    "410": {
+      "op": "frame_dig 9",
+      "defined_out": [
+        "absoluteBound#0",
+        "i\u2081#0",
+        "state.1#2",
+        "threshold#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "state.1#2"
+      ]
+    },
+    "412": {
+      "op": "frame_bury 6",
+      "defined_out": [
+        "absoluteBound#0",
+        "i\u2081#0",
+        "state.1#2",
+        "threshold#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ]
+    },
+    "414": {
+      "op": "frame_dig 8",
+      "defined_out": [
+        "absoluteBound#0",
+        "i\u2081#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "state.0#2"
+      ]
+    },
+    "416": {
+      "op": "frame_bury 5",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ]
+    },
+    "418": {
+      "block": "bounded_rand_uint64_while_top@13",
+      "stack_in": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ],
+      "op": "frame_dig 3",
+      "defined_out": [
+        "i\u2081#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "i\u2081#0"
+      ]
+    },
+    "420": {
+      "op": "frame_dig 12",
+      "defined_out": [
+        "i\u2081#0",
+        "length#1"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "i\u2081#0",
+        "length#1"
+      ]
+    },
+    "422": {
+      "op": "<",
+      "defined_out": [
+        "i\u2081#0",
+        "length#1",
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "tmp%10#0"
+      ]
+    },
+    "423": {
+      "op": "bz bounded_rand_uint64_after_if_else@20",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ]
+    },
+    "426": {
+      "block": "bounded_rand_uint64_while_top@15",
+      "stack_in": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ],
+      "op": "frame_dig 5",
+      "defined_out": [
+        "state.0#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "state.0#2"
+      ]
+    },
+    "428": {
+      "op": "frame_dig 6",
+      "defined_out": [
+        "state.0#2",
+        "state.1#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "state.0#2",
+        "state.1#2"
+      ]
+    },
+    "430": {
+      "callsub": "lib_pcg/pcg64.algo.ts::__pcg64UnboundedRandom",
+      "op": "callsub __pcg64UnboundedRandom",
+      "defined_out": [
+        "candidate#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "state.0#2",
+        "state.1#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "candidate#0"
+      ]
+    },
+    "433": {
+      "op": "dup",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "candidate#0",
+        "candidate#0 (copy)"
+      ]
+    },
+    "434": {
+      "op": "cover 3",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "candidate#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "candidate#0"
+      ]
+    },
+    "436": {
+      "op": "frame_bury 1",
+      "defined_out": [
+        "candidate#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "state.0#2",
+        "state.1#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "candidate#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0"
+      ]
+    },
+    "438": {
+      "op": "cover 2",
+      "defined_out": [
+        "candidate#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "state.0#2",
+        "state.1#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "candidate#0",
+        "newState\u2081.0#0"
+      ]
+    },
+    "440": {
+      "op": "frame_bury 4",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "candidate#0"
+      ]
+    },
+    "442": {
+      "op": "frame_dig 7",
+      "defined_out": [
+        "candidate#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "candidate#0",
+        "threshold#0"
+      ]
+    },
+    "444": {
+      "op": ">=",
+      "defined_out": [
+        "candidate#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "tmp%11#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "tmp%11#0"
+      ]
+    },
+    "445": {
+      "op": "bz bounded_rand_uint64_after_if_else@17",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0"
+      ]
+    },
+    "448": {
+      "op": "frame_dig 13",
+      "defined_out": [
+        "candidate#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "result#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "result#0"
+      ]
+    },
+    "450": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "candidate#0",
+        "expr_value_trimmed%1#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "result#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "expr_value_trimmed%1#0"
+      ]
+    },
+    "453": {
+      "op": "frame_dig 1",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "expr_value_trimmed%1#0",
+        "candidate#0"
+      ]
+    },
+    "455": {
+      "op": "frame_dig 0",
+      "defined_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "expr_value_trimmed%1#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "result#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "expr_value_trimmed%1#0",
+        "candidate#0",
+        "absoluteBound#0"
+      ]
+    },
+    "457": {
+      "op": "%",
+      "defined_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "expr_value_trimmed%1#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "result#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "expr_value_trimmed%1#0",
+        "tmp%12#0"
+      ]
+    },
+    "458": {
+      "op": "frame_dig 10",
+      "defined_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "expr_value_trimmed%1#0",
+        "lowerBound#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "result#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "expr_value_trimmed%1#0",
+        "tmp%12#0",
+        "lowerBound#0"
+      ]
+    },
+    "460": {
+      "op": "+",
+      "defined_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "expr_value_trimmed%1#0",
+        "lowerBound#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "result#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "expr_value_trimmed%1#0",
+        "to_encode%0#0"
+      ]
+    },
+    "461": {
+      "op": "itob",
+      "defined_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "expr_value_trimmed%1#0",
+        "lowerBound#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "result#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "val_as_bytes%1#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "expr_value_trimmed%1#0",
+        "val_as_bytes%1#0"
+      ]
+    },
+    "462": {
+      "op": "concat",
+      "defined_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "concatenated%1#0",
+        "lowerBound#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "result#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "concatenated%1#0"
+      ]
+    },
+    "463": {
+      "op": "dup",
+      "defined_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "concatenated%1#0",
+        "concatenated%1#0 (copy)",
+        "lowerBound#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "result#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "concatenated%1#0",
+        "concatenated%1#0 (copy)"
+      ]
+    },
+    "464": {
+      "op": "len",
+      "defined_out": [
+        "absoluteBound#0",
+        "byte_len%1#0",
+        "candidate#0",
+        "concatenated%1#0",
+        "lowerBound#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "result#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "concatenated%1#0",
+        "byte_len%1#0"
+      ]
+    },
+    "465": {
+      "op": "pushint 8 // 8",
+      "defined_out": [
+        "8",
+        "absoluteBound#0",
+        "byte_len%1#0",
+        "candidate#0",
+        "concatenated%1#0",
+        "lowerBound#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "result#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "concatenated%1#0",
+        "byte_len%1#0",
+        "8"
+      ]
+    },
+    "467": {
+      "op": "/",
+      "defined_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "concatenated%1#0",
+        "len_%1#0",
+        "lowerBound#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "result#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "concatenated%1#0",
+        "len_%1#0"
+      ]
+    },
+    "468": {
+      "op": "itob",
+      "defined_out": [
+        "absoluteBound#0",
+        "as_bytes%1#0",
+        "candidate#0",
+        "concatenated%1#0",
+        "lowerBound#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "result#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "concatenated%1#0",
+        "as_bytes%1#0"
+      ]
+    },
+    "469": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "concatenated%1#0",
+        "len_16_bit%1#0",
+        "lowerBound#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "result#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "concatenated%1#0",
+        "len_16_bit%1#0"
+      ]
+    },
+    "472": {
+      "op": "swap",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "len_16_bit%1#0",
+        "concatenated%1#0"
+      ]
+    },
+    "473": {
+      "op": "concat",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "result#0"
+      ]
+    },
+    "474": {
+      "op": "frame_bury 13",
+      "defined_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "lowerBound#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "result#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0"
+      ]
+    },
+    "476": {
+      "op": "frame_dig 3",
+      "defined_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i\u2081#0",
+        "lowerBound#0",
+        "newState\u2081.0#0",
+        "newState\u2081.1#0",
+        "result#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "i\u2081#0"
+      ]
+    },
+    "478": {
+      "op": "intc_0 // 1",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "i\u2081#0",
+        "1"
+      ]
+    },
+    "479": {
+      "op": "+",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0",
+        "i\u2081#0"
+      ]
+    },
+    "480": {
+      "op": "frame_bury 3",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "state.1#2"
+      ]
+    },
+    "482": {
+      "op": "frame_bury 6",
+      "defined_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i\u2081#0",
+        "lowerBound#0",
+        "newState\u2081.0#0",
+        "result#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ]
+    },
+    "484": {
+      "op": "frame_dig 4",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "state.0#2"
+      ]
+    },
+    "486": {
+      "op": "frame_bury 5",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ]
+    },
+    "488": {
+      "op": "b bounded_rand_uint64_while_top@13"
+    },
+    "491": {
+      "block": "bounded_rand_uint64_after_if_else@17",
+      "stack_in": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "newState\u2081.1#0"
+      ],
+      "op": "frame_bury 6",
+      "defined_out": [
+        "state.1#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ]
+    },
+    "493": {
+      "op": "frame_dig 4",
+      "defined_out": [
+        "state.0#2",
+        "state.1#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "state.0#2"
+      ]
+    },
+    "495": {
+      "op": "frame_bury 5",
+      "defined_out": [
+        "state.0#2",
+        "state.1#2"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ]
+    },
+    "497": {
+      "op": "b bounded_rand_uint64_while_top@15"
+    },
+    "500": {
+      "block": "bounded_rand_uint64_else_body@11",
+      "stack_in": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ],
+      "op": "frame_dig 10",
+      "defined_out": [
+        "lowerBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "lowerBound#0"
+      ]
+    },
+    "502": {
+      "op": "dup",
+      "defined_out": [
+        "lowerBound#0",
+        "lowerBound#0 (copy)"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "lowerBound#0",
+        "lowerBound#0 (copy)"
+      ]
+    },
+    "503": {
+      "op": "pushint 18446744073709551615 // 18446744073709551615",
+      "defined_out": [
+        "18446744073709551615",
+        "lowerBound#0",
+        "lowerBound#0 (copy)"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "lowerBound#0",
+        "lowerBound#0 (copy)",
+        "18446744073709551615"
+      ]
+    },
+    "514": {
+      "op": "<",
+      "defined_out": [
+        "lowerBound#0",
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "lowerBound#0",
+        "tmp%7#0"
+      ]
+    },
+    "515": {
+      "op": "assert",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "lowerBound#0"
+      ]
+    },
+    "516": {
+      "op": "itob",
+      "defined_out": [
+        "lowerBound#0",
+        "reinterpret_biguint%0#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "reinterpret_biguint%0#0"
+      ]
+    },
+    "517": {
+      "op": "pushbytes 0x010000000000000000",
+      "defined_out": [
+        "0x010000000000000000",
+        "lowerBound#0",
+        "reinterpret_biguint%0#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "reinterpret_biguint%0#0",
+        "0x010000000000000000"
+      ]
+    },
+    "528": {
+      "op": "swap",
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "0x010000000000000000",
+        "reinterpret_biguint%0#0"
+      ]
+    },
+    "529": {
+      "op": "b-",
+      "defined_out": [
+        "lowerBound#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "tmp%8#0"
+      ]
+    },
+    "530": {
+      "op": "btoi",
+      "defined_out": [
+        "absoluteBound#0",
+        "lowerBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0",
+        "absoluteBound#0"
+      ]
+    },
+    "531": {
+      "op": "frame_bury 0",
+      "defined_out": [
+        "absoluteBound#0",
+        "lowerBound#0"
+      ],
+      "stack_out": [
+        "absoluteBound#0",
+        "candidate#0",
+        "i#0",
+        "i\u2081#0",
+        "newState\u2081.0#0",
+        "state.0#2",
+        "state.1#2",
+        "threshold#0",
+        "addLow#1",
+        "addLow#4",
+        "lowerBound#0",
+        "upperBound#0",
+        "length#1",
+        "result#0"
+      ]
+    },
+    "533": {
+      "op": "b bounded_rand_uint64_after_if_else@12"
+    },
+    "536": {
+      "subroutine": "smart_contracts/pcg_generator/contract.algo.ts::LibPcg64ExposerAlgoTs.update",
+      "params": {},
+      "block": "update",
+      "stack_in": [],
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "538": {
+      "op": "global CreatorAddress",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%1#0"
+      ]
+    },
+    "540": {
+      "op": "==",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "541": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "542": {
+      "retsub": true,
+      "op": "retsub"
+    }
+  }
+}

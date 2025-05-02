@@ -1,0 +1,14 @@
+name: Pull Request validation
+
+on: [pull_request]
+
+
+jobs:
+  spinning-wheel-contracts-ci:
+    name: Run spinning-wheel-contracts validation
+    uses: ./.github/workflows/spinning-wheel-contracts-ci.yaml
+
+  spinning-wheel-frontend-ci:
+    name: Run spinning-wheel-frontend validation
+    uses: ./.github/workflows/spinning-wheel-frontend-ci.yaml
+

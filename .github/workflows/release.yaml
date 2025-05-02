@@ -1,0 +1,38 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'docs/**'
+      - '**.md'
+      - '.vscode/**'
+      - '.idea/**'
+
+permissions:
+  contents: read
+  packages: read
+
+jobs:
+  spinning-wheel-contracts-validate:
+    name: Run spinning-wheel-contracts release
+    secrets: inherit
+    uses: ./.github/workflows/spinning-wheel-contracts-ci.yaml
+
+  spinning-wheel-contracts-release:
+    name: Run spinning-wheel-contracts release
+    secrets: inherit
+    uses: ./.github/workflows/spinning-wheel-contracts-cd.yaml
+    needs: spinning-wheel-contracts-validate
+
+  spinning-wheel-frontend-validate:
+    name: Run spinning-wheel-frontend release
+    secrets: inherit
+    uses: ./.github/workflows/spinning-wheel-frontend-ci.yaml
+
+  spinning-wheel-frontend-release:
+    name: Run spinning-wheel-frontend release
+    secrets: inherit
+    uses: ./.github/workflows/spinning-wheel-frontend-cd.yaml
+    needs: spinning-wheel-frontend-validate

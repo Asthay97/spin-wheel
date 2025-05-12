@@ -6,23 +6,17 @@ export const getRandomNumber = (min: number, max: number): number => {
 };
 
 // Calculate the rotation angle based on the selected winner
-export const calculateWinnerRotation = (
-  participants: Participant[],
-  selectedWinnerIndex: number
-): number => {
-  const minRotation = 1800; // 5 full rotations
-  const sectionSize = 360 / participants.length;
+export function calculateWinnerRotation(participants, winnerIndex, totalSpins = 5) {
+  const anglePerParticipant = 360 / participants.length;
+  const winnerCenterAngle = (winnerIndex + 0.5) * anglePerParticipant;
 
-  // Align the winner segment to the top (0°), which is where the pointer is
-  const winnerOffset = selectedWinnerIndex * sectionSize + sectionSize / 2;
+  const desiredPointerAngle = 90; // top position
+  const offsetToTop = desiredPointerAngle - winnerCenterAngle;
 
-  // Add randomness within the segment
-  const randomOffset = getRandomNumber(-sectionSize / 4, sectionSize / 4);
+  const totalRotation = totalSpins * 360 + offsetToTop;
 
-  const finalRotation = minRotation + winnerOffset + randomOffset;
-
-  return finalRotation;
-};
+  return totalRotation;
+}
 
 
 // Easing function for realistic spinning (ease-out)

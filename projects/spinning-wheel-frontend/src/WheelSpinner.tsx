@@ -139,18 +139,19 @@ const WheelSpinner: React.FC = () => {
       </main>
 
       {state.winner && (
-        <>
-          <Confetti width={width} height={height} numberOfPieces={400} recycle={false} />
-          <div className="fixed inset-0 bg-black bg-opacity-70 z-50 flex flex-col justify-center items-center">
-            <h1 className="text-5xl font-extrabold text-white mb-4 animate-bounce">
-              🎉 {state.winner.name} Wins! 🎉
-            </h1>
-            <button className="btn btn-accent text-lg" onClick={handleReset}>
-              Close Celebration
-            </button>
-          </div>
-        </>
-      )}
+  <>
+    <Confetti width={width} height={height} numberOfPieces={400} recycle={false} />
+    <div className="fixed inset-0 bg-black z-50 flex flex-col justify-center items-center">
+      <h1 className="text-5xl font-extrabold text-white mb-4 animate-bounce">
+        🎉 {state.winner.name} Wins! 🎉
+      </h1>
+      <button className="btn btn-accent text-lg" onClick={handleReset}>
+        Close Celebration
+      </button>
+    </div>
+  </>
+)}
+
     </div>
   );
 };

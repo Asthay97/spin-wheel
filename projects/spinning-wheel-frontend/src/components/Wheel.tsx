@@ -47,12 +47,12 @@ const Wheel: React.FC<WheelProps> = ({
           animationRef.current = requestAnimationFrame(animate);
         } else {
           // Determine winner
-          const finalRotation = currentRotationRef.current % 360;
-          const normalizedAngle = (360 - finalRotation + 90) % 360; // 90° marker at top
-          const anglePerParticipant = 360 / participants.length;
-          const winningIndex = Math.floor(normalizedAngle / anglePerParticipant);
-          const winner = participants[winningIndex];
-          onSpinComplete(winner);
+          // const finalRotation = currentRotationRef.current % 360;
+          // const normalizedAngle = (360 - finalRotation + 90) % 360; // 90° marker at top
+          // const anglePerParticipant = 360 / participants.length;
+          // const winningIndex = Math.floor(normalizedAngle / anglePerParticipant);
+          // const winner = participants[winningIndex];
+          onSpinComplete();
         }
       };
 
